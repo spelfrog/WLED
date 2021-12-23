@@ -108,6 +108,8 @@
 #include "../usermods/quinled-an-penta/quinled-an-penta.h"
 #endif
 
+#include "../usermods/potis_controls/potis_controls.h"
+
 void registerUsermods()
 {
 /*
@@ -116,6 +118,8 @@ void registerUsermods()
    * \/ \/ \/
    */
   //usermods.add(new MyExampleUsermod());
+
+    usermods.add(new PotisControls());
 
   #ifdef USERMOD_BATTERY_STATUS_BASIC
   usermods.add(new UsermodBatteryBasic());
